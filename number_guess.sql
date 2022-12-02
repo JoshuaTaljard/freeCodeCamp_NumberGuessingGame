@@ -26,7 +26,6 @@ CREATE DATABASE number_guess WITH TEMPLATE = template0 ENCODING = 'UTF8' LC_COLL
 
 ALTER DATABASE number_guess OWNER TO freecodecamp;
 
-\connect number_guess
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -71,15 +70,6 @@ ALTER TABLE public.users OWNER TO freecodecamp;
 --
 -- Name: users_user_id_seq; Type: SEQUENCE; Schema: public; Owner: freecodecamp
 --
-
-CREATE SEQUENCE public.users_user_id_seq
-    AS integer
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
 
 ALTER TABLE public.users_user_id_seq OWNER TO freecodecamp;
 
